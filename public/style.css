@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+.pill-bar {
+    background-color: white;
+    border-radius: 3px
+}
+
+#app-view {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: darkgray;
+}
+
+#screensaver {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+#screensaver iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#screensaver-handle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    translate: -50% 0;
+    width: 25%;
+    height: 5%;
+
+    /* background-color: red; */
+}
+
+#screensaver-handle .pill-bar {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    translate: -50% 0;
+    width: 90%;
+    height: 6px;
+}
+
+#control-slideout {
+    position: fixed;
+    left: 100%;
+    top: 50%;
+    translate: 0 -50%;
+    height: 90%;
+    width: 20%;
+
+    /* background-color: magenta; */
+}
+
+#control-slideout iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#control-slideout-handle {
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    translate: 0 -50%;
+    height: 30%;
+    width: 5%;
+
+    /* background-color: greenyellow; */
+}
+
+#control-slideout-handle .pill-bar {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    translate: 0 -50%;
+    width: 6px;
+    height: 90%;
+}
+
