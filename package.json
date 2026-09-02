@@ -1,0 +1,33 @@
+{
+  "name": "simple-launcher",
+  "version": "0.0.1",
+  "description": "Simple Electron-base app and PWA launcher",
+  "main": "main.js",
+  "dependencies": {
+    "debug": "^4.4.3",
+    "env-paths": "^3.0.0",
+    "graceful-fs": "^4.2.11",
+    "ms": "^2.1.3",
+    "progress": "^2.0.3",
+    "semver": "^7.8.5",
+    "sumchecker": "^3.0.1",
+    "undici-types": "^7.18.2"
+  },
+  "devDependencies": {
+    "electron": "^44.1.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fufs/simple-launcher.git"
+  },
+  "author": "Fufs",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Fufs/simple-launcher/issues"
+  },
+  "homepage": "https://github.com/Fufs/simple-launcher#readme"
+}
