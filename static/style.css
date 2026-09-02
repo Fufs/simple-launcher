@@ -11,11 +11,32 @@ iframe {
     border-radius: 3px
 }
 
+.input-shield {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.input-shield.active {
+    display: block;
+}
+
 #app-view {
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: darkgray;
+}
+
+/* FIXME: */
+#app-view h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
 
 #screensaver {
@@ -38,10 +59,10 @@ iframe {
 #screensaver-handle {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -5%;
     translate: -50% 0;
     width: 25%;
-    height: 5%;
+    height: 10%;
 
     /* background-color: red; */
 }
@@ -49,7 +70,7 @@ iframe {
 #screensaver-handle .pill-bar {
     position: absolute;
     left: 50%;
-    bottom: 10px;
+    bottom: 55%;
     translate: -50% 0;
     width: 90%;
     height: 6px;
@@ -72,22 +93,24 @@ iframe {
     top: 0;
     width: 100%;
     height: 100%;
+
+    border-radius: 25px;
 }
 
 #control-slideout-handle {
     position: absolute;
-    left: -5%;
+    left: -8%;
     top: 50%;
     translate: 0 -50%;
     height: 30%;
-    width: 5%;
+    width: 10%;
 
     /* background-color: greenyellow; */
 }
 
 #control-slideout-handle .pill-bar {
     position: absolute;
-    right: 5px;
+    right: 30%;
     top: 50%;
     translate: 0 -50%;
     width: 6px;
