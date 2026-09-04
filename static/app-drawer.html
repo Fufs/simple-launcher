@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #app-drawer {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                background-color: #282828;
+            }
+
+            #app-grid {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 60%;
+                height: 75%;
+                translate: -50% -50%;
+
+                /* background-color: yellow; */
+
+                display: grid;
+                grid: auto / auto auto auto auto;
+            }
+
+            .app-shortcut {
+                width: 75%;
+                aspect-ratio: 1;
+                position: relative;
+                left: 50%;
+                top: 50%;
+                translate: -50% -50%;
+
+                text-decoration: none;
+                color: white;
+            }
+
+            .app-shortcut:hover {
+                background-color: chartreuse;
+            }
+
+            .app-shortcut .app-icon {
+                width: 65%;
+                aspect-ratio: 1;
+                position: absolute;
+                left: 50%;
+                top: 10%;
+                translate: -50% 0;
+
+                filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+            }
+
+            .app-shortcut .app-label {
+                position: absolute;
+                bottom: 7px;
+                left: 50%;
+                translate: -50% 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app-drawer" style="line-height: 100%;">
+            <div id="app-grid">
+                <div class="app-shortcut" onclick="window.open('https:\/\/google.com')">
+                        <img class="app-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                        <div class="app-label">Google</div>
+                </div>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Google_Favicon_2025.svg">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Google_Favicon_2025.svg">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Google_Favicon_2025.svg">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Google_Favicon_2025.svg">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://google.com/favicon.ico">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://google.com/favicon.ico">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://google.com/favicon.ico">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+                <a href="https://google.com" class="app-shortcut">
+                    <div>
+                        <img class="app-icon" src="https://google.com/favicon.ico">
+                        <div class="app-label">Google</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

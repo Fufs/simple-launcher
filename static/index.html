@@ -3,37 +3,40 @@
     <head>
         <title>My Project</title>
         <link href="./style.css" rel="stylesheet" />
-            <meta charset="UTF-8" />
-            <!-- FIXME: Back in my day, we just let XSS be available. -->
-            <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-            <!-- <meta
-                http-equiv="Content-Security-Policy"
-                content="default-src 'self'; script-src 'self'"
-            />
-            <meta
-                http-equiv="X-Content-Security-Policy"
-                content="default-src 'self'; script-src 'self'"
-            /> -->
+        <meta charset="UTF-8" />
+        <!-- FIXME: Back in my day, we just let XSS be available. -->
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <!-- <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+        />
+        <meta
+            http-equiv="X-Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+        /> -->
     </head>
     <body>
-        <div id="app-view" style="line-height: 100%;">
-            <h1>Nothing here yet, but big things are coming!</h1>
+        <div id="app-view">
+            <webview class="center" src="./app-drawer.html"></webview>
+            <div class="input-shield"></div>
         </div>
         <div id="screensaver">
-            <iframe></iframe>
+            <iframe sandbox="allow-scripts"></iframe>
             <div class="input-shield"></div>
             <div id="screensaver-handle">
                 <div class="pill-bar"></div>
             </div>
         </div>
         <div id="control-slideout">
-            <iframe></iframe>
+            <iframe sandbox="allow-scripts allow-same-origin"></iframe>
             <div class="input-shield"></div>
             <div id="control-slideout-handle">
                 <div class="pill-bar"></div>
             </div>
         </div>
-        <script src="./js/config.js"></script>
         <script src="./js/drag.js"></script>
+        <script src="./js/inception.js"></script>
+        <script src="./js/config.js"></script>
+        <script src="./js/app.js"></script>
     </body>
 </html>
